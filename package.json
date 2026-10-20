@@ -2,9 +2,13 @@
   "name": "csv-table-preview",
   "displayName": "CSV Table Preview",
   "description": "Fast, read-only CSV table preview with sorting, filtering, and pagination.",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "publisher": "localdev",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlainOUYANG/csv-table-preview.git"
+  },
   "engines": {
     "vscode": "^1.85.0"
   },

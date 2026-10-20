@@ -13,7 +13,7 @@
 - 默认**手动开启**，不影响 CSV 的正常文本编辑。
 
 ## 安装
-在 VS Code 中选择「扩展 → … → 从 VSIX 安装」，选择 `csv-table-preview-0.3.0.vsix`，如提示请重新加载窗口。
+在 VS Code 中选择「扩展 → … → 从 VSIX 安装」，选择 `csv-table-preview-0.3.1.vsix`，如提示请重新加载窗口。
 
 也可以用命令行安装：
 

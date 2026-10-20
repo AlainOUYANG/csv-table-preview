@@ -13,7 +13,7 @@ A lightweight, dependency-free VS Code extension to preview `.csv` files in a ta
 - Default is **opt-in**, so normal CSV text editing is unaffected.
 
 ## Install
-In VS Code choose **Extensions → … → Install from VSIX**, select `csv-table-preview-0.3.0.vsix`, then reload if prompted.
+In VS Code choose **Extensions → … → Install from VSIX**, select `csv-table-preview-0.3.1.vsix`, then reload if prompted.
 
 ## Use
 Open a CSV text file and click the **table icon in the top-right editor toolbar**. Its read-only table preview appears in the right editor group while the CSV stays open on the left. Alternatively, right-click a CSV file in Explorer → **CSV: Open Table Preview**, or run the command from the Command Palette. Use the **Rows per page** selector in the preview footer to change the number of rows displayed. Use **Open as Text** inside the preview if you want to switch that pane back to text.
