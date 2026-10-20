@@ -1,5 +1,7 @@
 # CSV Table Preview
 
+English | [简体中文](README.zh-CN.md)
+
 A lightweight, dependency-free VS Code extension to preview `.csv` files in a table without changing the source file.
 
 ## Features
