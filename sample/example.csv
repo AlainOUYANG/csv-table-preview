@@ -1,0 +1,5 @@
+name,amount,note
+Alice,12.5,"Hello, world"
+Bob,20,"Multiline
+note"
+Charlie,8,"He said ""hi"""

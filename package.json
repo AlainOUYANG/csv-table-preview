@@ -1,0 +1,85 @@
+{
+  "name": "csv-table-preview",
+  "displayName": "CSV Table Preview",
+  "description": "Fast, read-only CSV table preview with sorting, filtering, and pagination.",
+  "version": "0.3.0",
+  "publisher": "localdev",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other",
+    "Data Science",
+    "Visualization"
+  ],
+  "main": "./extension.js",
+  "activationEvents": [
+    "onCustomEditor:csvTablePreview.preview",
+    "onCommand:csvTablePreview.openPreview"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "csvTablePreview.openPreview",
+        "title": "CSV: Open Table Preview",
+        "icon": "$(table)"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "csvTablePreview.openPreview",
+          "when": "resourceExtname == .csv",
+          "group": "navigation"
+        }
+      ],
+      "editor/title": [
+        {
+          "command": "csvTablePreview.openPreview",
+          "when": "resourceExtname == .csv",
+          "group": "navigation@10"
+        }
+      ]
+    },
+    "customEditors": [
+      {
+        "viewType": "csvTablePreview.preview",
+        "displayName": "CSV Table Preview",
+        "selector": [
+          {
+            "filenamePattern": "*.csv"
+          },
+          {
+            "filenamePattern": "*.CSV"
+          }
+        ],
+        "priority": "option"
+      }
+    ],
+    "configuration": {
+      "title": "CSV Table Preview",
+      "properties": {
+        "csvTablePreview.maxRows": {
+          "type": "integer",
+          "default": 10000,
+          "minimum": 100,
+          "maximum": 100000,
+          "description": "Maximum CSV rows loaded for table preview (excluding header)."
+        },
+        "csvTablePreview.delimiter": {
+          "type": "string",
+          "enum": [
+            "auto",
+            ",",
+            ";",
+            "\t",
+            "|"
+          ],
+          "default": "auto",
+          "description": "CSV delimiter, or auto-detect."
+        }
+      }
+    }
+  }
+}
